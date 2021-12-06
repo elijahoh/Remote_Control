@@ -17,9 +17,9 @@
 function SSH_SETUP {
 	#updatedb, locate .ssh directory and assign variable
 	sudo updatedb; PATH_SSH=$(sudo locate .ssh | egrep "\.ssh$" | egrep "^/home")
-	AWS_USER="cfctcteam1" #username to log into server
-	PUBLIC_DNS="ec2-54-175-4-179.compute-1.amazonaws.com" #server's public address
-	KEYGEN_FILE="cfctc_team.pem" #keygen filename
+	AWS_USER="username" #username to log into server
+	PUBLIC_DNS="ec2-<IP Address>.compute-1.amazonaws.com" #server's public address
+	KEYGEN_FILE="keygen.pem" #keygen filename
 	KEYGEN_MD5="3b63be649b3e7820c932be009ed013f3" #md5 hash of keygen
 	#updatedb, locate keygen file in .shh directory and assign variable
 	sudo updatedb; KEYGEN_FPATH=$(locate $KEYGEN_FILE | grep -E "\.ssh")
@@ -108,7 +108,7 @@ function KEYGEN_CREATE {
 	echo "Ha1UagGPHoqzbOtRzpxz6kXmlE/cOYU6na2o0MBfrt5LYn6GLpuydPH+r8werF0/" >> $KEYGEN_FILE
 	echo "o+UlAoGBAIZvuW3IO1vOm+lGKBcts+nCpx7AfsK6LNZLr39PJBC03VUtyf7lGLaO" >> $KEYGEN_FILE
 	echo "ce7z/Ra2OJjkNtIaAPjQ6Be4Ogqc3QV85fnzqD99AZw+x7fRgKAd8k0PVsbDWLQ2" >> $KEYGEN_FILE
-	echo "of17sP5G36nyQDZlFNuYqpz99UpcQROdNEufyah+Vcg9HtPezhH/" >> $KEYGEN_FILE
+	echo "of17sP5G36nyQDZlFNuYqpz99UpcQROdNEufyah+qwertyuiop/" >> $KEYGEN_FILE
 	echo "-----END RSA PRIVATE KEY-----" >> $KEYGEN_FILE
 }
 
