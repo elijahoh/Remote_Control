@@ -5,10 +5,10 @@
 #Date Modified: 09/10/2021
 
 #Note: Amazon EC2 server was used for this script
-#	   Please update KEYGEN_CREATE function.	#create the SSH key file
+#      Please update KEYGEN_CREATE function.				#create the SSH key file
 #
 #      Please update the following SSH_SETUP function's variables:
-#	       - $AWS_USER							#username to log into server
+#	       - $AWS_USER						#username to log into server
 #	       - $PUBLIC_DNS						#server's public address
 #	       - $KEYGEN_FILE						#keygen filename
 #	       - $KEYGEN_MD5						#md5 hash of keygen
